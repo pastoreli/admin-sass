@@ -1,0 +1,21 @@
+.card-content{
+  position: relative;
+  margin: auto;
+  display: table;
+
+  .card{
+    width: 250px;
+    height: 100px;
+    display: inline-table;
+    margin: 15px;
+    background: $card-color;
+    padding: 10px 20px;
+
+    .title{
+      @include font-source-sans(16px, #000, 400);
+    }
+    .value{
+      @include font-source-sans(24px, #000, bold);
+    }
+  }
+}

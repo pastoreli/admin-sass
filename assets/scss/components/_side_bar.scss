@@ -1,0 +1,26 @@
+.side-bar{
+  width: $side-bar-width;
+  height: 100vh;
+  background: $brand-color;
+  float: left;
+  padding: 20px 0;
+
+  .title{
+    @include font-source-sans(20px, #fff, bold);
+    margin: 0  20px;
+  }
+
+  .menu{
+    text-align: center;
+    margin-top: 20px;
+    .menu-item{
+      display: block;
+      width: 100%;
+      height: 30px;
+      @include font-source-sans(16px, #fff);
+      &:hover{
+        background: rgba(#000, .2);
+      }
+    } 
+  }
+}
